@@ -40,8 +40,10 @@ Run all tests:
    npx playwright test
 
 Run specific test file:
-   npx playwright test tests/api/verifyPokeApi.spec.ts
-   npx playwright test tests/ui/verifyBeitragsrechnerFlow.spec.ts
+
+   - npx playwright test tests/api/verifyPokeApi.spec.ts
+   
+   - npx playwright test tests/ui/verifyBeitragsrechnerFlow.spec.ts
 
 Run tests with UI mode:
    npx playwright test --ui
