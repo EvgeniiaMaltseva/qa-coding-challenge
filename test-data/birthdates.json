@@ -1,0 +1,9 @@
+    [
+        { "description": "invalidDate", "day": "30", "month": "02", "year": "1970", "isValid": false, "errorMessage": " Bitte gib ein korrektes Datum ein. " },
+        { "description": "invalidMonth", "day": "11", "month": "0", "year": "1999", "isValid": false, "errorMessage": " Bitte gib ein korrektes Datum ein. " },
+        { "description": "invalidDay", "day": "0", "month": "11", "year": "1999", "isValid": false, "errorMessage": " Bitte gib ein korrektes Datum ein. " },
+        { "description": "tooOld", "day": "1", "month": "12", "year": "1923", "isValid": false, "errorMessage": " Du kannst dich nur bis 101 Jahren bei uns versichern. " },
+        { "description": "tooYoung", "day": "15", "month": "6", "year": "2009", "isValid": false, "errorMessage": " Leider kannst du dich erst ab 18 Jahren alleine versichern. " },
+        { "description": "futureDate", "day": "03", "month": "03", "year": "2028", "isValid": false, "errorMessage": " Du bist in der Zukunft geboren? Bitte überprüfe deine Eingaben. " },
+        { "description": "validDate", "day": "01", "month": "05", "year": "1980", "isValid": true, "errorMessage": "" }       
+    ]

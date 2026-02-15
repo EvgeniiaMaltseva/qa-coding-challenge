@@ -1,0 +1,54 @@
+QA strategy
+
+1. What types of tests would you create to cover this app?
+- API / Integration Tests
+- End-to-End UI tests
+- Exploratory and visual regression tests
+- Performance and user experience testing
+
+2. Describe briefly what test cases would you write, and which ones would you cover with
+automated tests? Name a couple of edge cases you’ve noticed.
+Test Cases to Automate:
+Core Business Flow:
+Since each employment status leads to a different form configuration, I would create separate E2E happy-path tests for each status to ensure users can:
+    - Complete the form successfully
+    - Receive a calculated offer
+    - Proceed to the application form
+    - Request an offer via email
+    - Arrange a consultation appointment
+
+Tariff Configuration:
+- Validate that client can configure tariff options independently
+- Verify all insurance types can be selected:
+    - Vollversicherung
+    - Zahnzusatzversicherung
+    - Krankenhauszusatzversicherung (hospital supplementary insurance)
+- Validate all offer types:
+    - Premium
+    - Business
+    - First Class
+- Validate custom configuration options such as:
+    - Selbstbehalt
+    - Zimmerwahl
+
+Form Validation:
+- Ensure required fields cannot be skipped, 
+- Verify validation error messages for incorrect or incomplete inputs
+- Ensure users cannot proceed to the next step without valid data
+
+Navigation and State Handling:
+- Verify users can navigate back and modify previously entered data
+- Ensure form state updates correctly after changes
+- Validate the reset functionality
+- Verify the “Contact an Agent” functionality
+
+Edge Cases:
+- Insurance eligibility depends on income thresholds
+- Boundary ages, future or invalid birth dates
+- Children can only be insured up to the age of 20 and have their own tarif options
+- Switching employment status mid-process
+- Refreshing the page during the process
+
+Not to automate:
+- Exploratory testing
+- Visual UI validation
